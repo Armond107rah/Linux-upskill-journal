@@ -1,3 +1,4 @@
+<img width="988" height="663" alt="day- 01- linux-image" src="https://github.com/user-attachments/assets/a55aff19-a1dc-437f-8957-fc3730a6f972" />
 # Day 01 - Get to know your Server
 
 The objective of Day 01 is to become familiar with my Linux server environment and learn how to inspect basic system information from the command line.
@@ -34,4 +35,6 @@ This DigitalOcean server will serve as my Linux lab environment throughout the c
 ```bash
 whoami
 
-![Day 01 Linux Server Output](images/day-01-linux.png)
+<img width="988" height="663" alt="day- 01- linux-image" src="https://github.com/user-attachments/assets/a55aff19-a1dc-437f-8957-fc3730a6f972" />
+
+
