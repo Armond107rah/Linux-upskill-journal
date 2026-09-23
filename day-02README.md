@@ -13,4 +13,6 @@ _User: root
 --
 
 ## Find the Starting Location
+```bash
 'pwd'
+```
