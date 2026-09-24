@@ -69,3 +69,62 @@ cd ~
 Then I verified the result: pwd Which gave me the result /root
 ## What I learned
 The ~ symbol represents the current user's home directory. Because I was logged in as the root user: ~ = /root
+
+## 5. Find Hidden Files and Directories
+ displayed all entries in my home directory using:
+```bash
+ls
+
+-la
+```
+
+The hidden entries shown were:
+```bash
+.bash_history
+.bashrc
+.cache
+.cloud-locale-test.skip
+.lesshst
+.profile
+.ssh
+.wget-hsts
+```
+Hidden Entry Count: 8
+
+## What I learned
+Linux hidden files and directories normally begin with a period ..
+
+Examples include:
+
+.bashrc
+.profile
+.ssh
+
+The ls -la command shows hidden files and also provides detailed information such as:
+
+-Permissions
+-Owner
+-Group
+-File size
+-Modification time
+-File or directory name
+
+## 6. Identify Directories
+I used a detailed listing:
+```bash
+ls -la
+```
+A directory starts wit hthe letter d in the permission field.
+For example:
+```bash
+drwx-----
+```
+## What I learned
+The first character in a long listing helps identify the object type.
+
+Examples:
+
+- d = directory
+- - = regular file
+- l = symbolic link
+## Create a Directory Structure
