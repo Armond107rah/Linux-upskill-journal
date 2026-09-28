@@ -127,4 +127,78 @@ Examples:
 - d = directory
 - - = regular file
 - l = symbolic link
-## Create a Directory Structure
+## 7. Create a Directory Structure
+``` plain text
+linux-assessment --> day2/ --> files/
+```
+## Commands used:
+```bash
+cd
+mkdir linux-assessment
+cd linux-assessment
+mkdir day2
+cd day2
+mkdir files
+```
+I also learned the same structure can be created with:
+```bash
+mkdir -p ~/linux-assessment/day2/files
+```
+## What I learned
+The mkdir command creates directories
+The -p option allows linux to create multiple nested directories at onece.
+
+## 8. Create and Relocate a File
+ I returned home with the command cd. Then I created an empty file:
+ ```bash
+touch navigation-test
+```
+I verified it with the command ls. Then I moved it into the files directory:
+```bash
+mv navigation-test ~/linux-assessment/day2/files/
+```
+It would result: navigation-test
+## What I learned
+The touch command can create an empty file. The mv command can move files and directories. It can also rename files and directories.
+
+## 9. Move a Directory
+I created an archive directory:
+```bash
+mkdir ~/linux-assessment/day2/archive
+```
+Then i moved the files directory into archive:
+```bash
+mv ~/linux-assessment/day2/files ~/linux-assessment/day2/archive/
+```
+I verified the final structure: ls -R ~/linux-assessment
+The final directory structure was: linux-assessment/--> day2/--> archive/ --> files/ -->navigation-test
+
+## What I learned
+The mv command can move an entire directory and all of its contents. The ls -R command recursively displays diretories and their contents.
+
+## 10. Clean up
+After completing the assessment, i removed everything I created.
+
+```bash
+rm -rf ~/linux-assessment
+```
+Then I verified my home directory:
+```bash
+ls - la ~
+```
+The linux-assessment directory is no longer available. if the directory no longer exists, Linux returns: No such file or directory.
+
+## What I learned
+```bash
+rm -rf
+```
+Should be used carefully.
+Its options mean:
+```plain text
+rm = remove
+-r= recursively remove directories and contents
+-f = force removal without confirmation
+```
+
+
+
